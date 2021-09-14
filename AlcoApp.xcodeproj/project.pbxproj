@@ -1,0 +1,431 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5042353726CA6C60003DE626 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5042353626CA6C60003DE626 /* AppDelegate.swift */; };
+		5042353926CA6C60003DE626 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5042353826CA6C60003DE626 /* SceneDelegate.swift */; };
+		5042353B26CA6C60003DE626 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5042353A26CA6C60003DE626 /* ViewController.swift */; };
+		5042353E26CA6C60003DE626 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5042353C26CA6C60003DE626 /* Main.storyboard */; };
+		5042354126CA6C60003DE626 /* AlcoApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5042353F26CA6C60003DE626 /* AlcoApp.xcdatamodeld */; };
+		5042354326CA6C62003DE626 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5042354226CA6C62003DE626 /* Assets.xcassets */; };
+		5042354626CA6C62003DE626 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5042354426CA6C62003DE626 /* LaunchScreen.storyboard */; };
+		5042355026CA6DA8003DE626 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5042354F26CA6DA8003DE626 /* FavoritesViewController.swift */; };
+		5042355226CA7015003DE626 /* AddAlcoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5042355126CA7015003DE626 /* AddAlcoViewController.swift */; };
+		5042355426CA717E003DE626 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5042355326CA717E003DE626 /* InfoViewController.swift */; };
+		506FD3FB26CE3C3B00526B1A /* Drink+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506FD3F926CE3C3B00526B1A /* Drink+CoreDataClass.swift */; };
+		506FD3FC26CE3C3B00526B1A /* Drink+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506FD3FA26CE3C3B00526B1A /* Drink+CoreDataProperties.swift */; };
+		50B0D75B26CAA34E009519C7 /* FavoriteDrinksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B0D75A26CAA34E009519C7 /* FavoriteDrinksTableViewCell.swift */; };
+		50B0D75D26CAB8E8009519C7 /* CathegoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B0D75C26CAB8E8009519C7 /* CathegoriesViewController.swift */; };
+		50B0D75F26CABA83009519C7 /* CathegoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B0D75E26CABA83009519C7 /* CathegoriesTableViewCell.swift */; };
+		50B0D76326CC36AC009519C7 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B0D76226CC36AC009519C7 /* AnimationViewController.swift */; };
+		50C4D1F026D7C1B300BE7F0D /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C4D1EF26D7C1B300BE7F0D /* AboutViewController.swift */; };
+		50E4484F26D6998000E14B81 /* StarsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E4484E26D6998000E14B81 /* StarsCollectionViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5042353326CA6C60003DE626 /* AlcoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlcoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5042353626CA6C60003DE626 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5042353826CA6C60003DE626 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5042353A26CA6C60003DE626 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5042353D26CA6C60003DE626 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5042354026CA6C60003DE626 /* AlcoApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AlcoApp.xcdatamodel; sourceTree = "<group>"; };
+		5042354226CA6C62003DE626 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5042354526CA6C62003DE626 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5042354726CA6C62003DE626 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5042354F26CA6DA8003DE626 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		5042355126CA7015003DE626 /* AddAlcoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAlcoViewController.swift; sourceTree = "<group>"; };
+		5042355326CA717E003DE626 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		506FD3F926CE3C3B00526B1A /* Drink+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Drink+CoreDataClass.swift"; sourceTree = "<group>"; };
+		506FD3FA26CE3C3B00526B1A /* Drink+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Drink+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		50B0D75A26CAA34E009519C7 /* FavoriteDrinksTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDrinksTableViewCell.swift; sourceTree = "<group>"; };
+		50B0D75C26CAB8E8009519C7 /* CathegoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CathegoriesViewController.swift; sourceTree = "<group>"; };
+		50B0D75E26CABA83009519C7 /* CathegoriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CathegoriesTableViewCell.swift; sourceTree = "<group>"; };
+		50B0D76226CC36AC009519C7 /* AnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
+		50C4D1EF26D7C1B300BE7F0D /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		50E4484E26D6998000E14B81 /* StarsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarsCollectionViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5042353026CA6C60003DE626 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5042352A26CA6C60003DE626 = {
+			isa = PBXGroup;
+			children = (
+				506FD3F926CE3C3B00526B1A /* Drink+CoreDataClass.swift */,
+				506FD3FA26CE3C3B00526B1A /* Drink+CoreDataProperties.swift */,
+				50B0D75926CAA1F8009519C7 /* Cells */,
+				5042354E26CA6C8D003DE626 /* Models */,
+				5042354D26CA6C83003DE626 /* Screens */,
+				5042353526CA6C60003DE626 /* AlcoApp */,
+				5042353426CA6C60003DE626 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5042353426CA6C60003DE626 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5042353326CA6C60003DE626 /* AlcoApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5042353526CA6C60003DE626 /* AlcoApp */ = {
+			isa = PBXGroup;
+			children = (
+				5042353626CA6C60003DE626 /* AppDelegate.swift */,
+				5042353826CA6C60003DE626 /* SceneDelegate.swift */,
+				5042353A26CA6C60003DE626 /* ViewController.swift */,
+				5042353C26CA6C60003DE626 /* Main.storyboard */,
+				5042354226CA6C62003DE626 /* Assets.xcassets */,
+				5042354426CA6C62003DE626 /* LaunchScreen.storyboard */,
+				5042354726CA6C62003DE626 /* Info.plist */,
+				5042353F26CA6C60003DE626 /* AlcoApp.xcdatamodeld */,
+			);
+			path = AlcoApp;
+			sourceTree = "<group>";
+		};
+		5042354D26CA6C83003DE626 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				5042354F26CA6DA8003DE626 /* FavoritesViewController.swift */,
+				5042355126CA7015003DE626 /* AddAlcoViewController.swift */,
+				5042355326CA717E003DE626 /* InfoViewController.swift */,
+				50B0D75C26CAB8E8009519C7 /* CathegoriesViewController.swift */,
+				50B0D76226CC36AC009519C7 /* AnimationViewController.swift */,
+				50C4D1EF26D7C1B300BE7F0D /* AboutViewController.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		5042354E26CA6C8D003DE626 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		50B0D75926CAA1F8009519C7 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				50B0D75A26CAA34E009519C7 /* FavoriteDrinksTableViewCell.swift */,
+				50B0D75E26CABA83009519C7 /* CathegoriesTableViewCell.swift */,
+				50E4484E26D6998000E14B81 /* StarsCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5042353226CA6C60003DE626 /* AlcoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5042354A26CA6C62003DE626 /* Build configuration list for PBXNativeTarget "AlcoApp" */;
+			buildPhases = (
+				5042352F26CA6C60003DE626 /* Sources */,
+				5042353026CA6C60003DE626 /* Frameworks */,
+				5042353126CA6C60003DE626 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AlcoApp;
+			productName = AlcoApp;
+			productReference = 5042353326CA6C60003DE626 /* AlcoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5042352B26CA6C60003DE626 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					5042353226CA6C60003DE626 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 5042352E26CA6C60003DE626 /* Build configuration list for PBXProject "AlcoApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5042352A26CA6C60003DE626;
+			productRefGroup = 5042353426CA6C60003DE626 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5042353226CA6C60003DE626 /* AlcoApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5042353126CA6C60003DE626 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5042354626CA6C62003DE626 /* LaunchScreen.storyboard in Resources */,
+				5042354326CA6C62003DE626 /* Assets.xcassets in Resources */,
+				5042353E26CA6C60003DE626 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5042352F26CA6C60003DE626 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				506FD3FC26CE3C3B00526B1A /* Drink+CoreDataProperties.swift in Sources */,
+				50B0D75D26CAB8E8009519C7 /* CathegoriesViewController.swift in Sources */,
+				5042354126CA6C60003DE626 /* AlcoApp.xcdatamodeld in Sources */,
+				50C4D1F026D7C1B300BE7F0D /* AboutViewController.swift in Sources */,
+				506FD3FB26CE3C3B00526B1A /* Drink+CoreDataClass.swift in Sources */,
+				5042353B26CA6C60003DE626 /* ViewController.swift in Sources */,
+				50B0D76326CC36AC009519C7 /* AnimationViewController.swift in Sources */,
+				5042353726CA6C60003DE626 /* AppDelegate.swift in Sources */,
+				5042355426CA717E003DE626 /* InfoViewController.swift in Sources */,
+				5042355226CA7015003DE626 /* AddAlcoViewController.swift in Sources */,
+				5042355026CA6DA8003DE626 /* FavoritesViewController.swift in Sources */,
+				50E4484F26D6998000E14B81 /* StarsCollectionViewCell.swift in Sources */,
+				5042353926CA6C60003DE626 /* SceneDelegate.swift in Sources */,
+				50B0D75F26CABA83009519C7 /* CathegoriesTableViewCell.swift in Sources */,
+				50B0D75B26CAA34E009519C7 /* FavoriteDrinksTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5042353C26CA6C60003DE626 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5042353D26CA6C60003DE626 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5042354426CA6C62003DE626 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5042354526CA6C62003DE626 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5042354826CA6C62003DE626 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5042354926CA6C62003DE626 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5042354B26CA6C62003DE626 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BX832Z4ZJ4;
+				INFOPLIST_FILE = AlcoApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = befansy.AlcoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		5042354C26CA6C62003DE626 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BX832Z4ZJ4;
+				INFOPLIST_FILE = AlcoApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = befansy.AlcoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5042352E26CA6C60003DE626 /* Build configuration list for PBXProject "AlcoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5042354826CA6C62003DE626 /* Debug */,
+				5042354926CA6C62003DE626 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5042354A26CA6C62003DE626 /* Build configuration list for PBXNativeTarget "AlcoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5042354B26CA6C62003DE626 /* Debug */,
+				5042354C26CA6C62003DE626 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5042353F26CA6C60003DE626 /* AlcoApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5042354026CA6C60003DE626 /* AlcoApp.xcdatamodel */,
+			);
+			currentVersion = 5042354026CA6C60003DE626 /* AlcoApp.xcdatamodel */;
+			path = AlcoApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5042352B26CA6C60003DE626 /* Project object */;
+}

@@ -18,6 +18,9 @@ class AddAlcoViewController: UIViewController {
     @IBOutlet weak var addDescriptionTextField: UITextView!
     
     @IBOutlet weak var scrollView: UIScrollView!
+    
+    // MARK: Это конечно надо переделать, но пока что работает
+    
     @IBOutlet weak var star1: UIButton!
     @IBOutlet weak var star2: UIButton!
     @IBOutlet weak var star3: UIButton!
@@ -32,20 +35,14 @@ class AddAlcoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // MARK: Для ScrollView при появлении клавиатуры
+        
         NotificationCenter.default.addObserver(self, selector: #selector(keyBoardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyBoardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
         
         
-        
-        firstView.layer.shadowColor = UIColor.black.cgColor
-        firstView.layer.shadowOffset = CGSize(width: 10, height: 10)
-        firstView.layer.shadowOpacity = 0.8
-        firstView.layer.shadowRadius = 20
-        
-        secondView.layer.shadowColor = UIColor.black.cgColor
-        secondView.layer.shadowOffset = CGSize(width: 10, height: 10)
-        secondView.layer.shadowOpacity = 0.8
-        secondView.layer.shadowRadius = 20
+        setupView(view: firstView)
+        setupView(view: secondView)
         
     }
     
@@ -67,10 +64,9 @@ class AddAlcoViewController: UIViewController {
         scrollView.contentInset = insets
     }
     
+    // MARK: Создание новой записи и добавление в базу данных
+    
     private func createNewDrink() {
-        
-        
-        
         let name = addNameTextField.text
         let shop = addShopTextField.text
         let rate = choosenRate
@@ -86,8 +82,6 @@ class AddAlcoViewController: UIViewController {
         newDrink.descrip = description
         newDrink.cathegory = cathegory
         
-        
-        
         if let uniqueId = newDrink.drinkId {
             print("Drink id: \(uniqueId)")
         }
@@ -102,45 +96,38 @@ class AddAlcoViewController: UIViewController {
         
     }
     
-
+    // MARK: Очистка всех полей, возможно можно поумнее сделать
+    
     @IBAction func saveButtonPressed(_ sender: UIButton) {
-        
         if addNameTextField.text == "" || addShopTextField.text == "" || addDescriptionTextField.text == "" {
             showAlert()
         } else {
             createNewDrink()
         }
-        
     }
+    
     @IBAction func clearButtonPressed(_ sender: UIButton) {
-        
         addNameTextField.text = ""
         addShopTextField.text = ""
         addDescriptionTextField.text = ""
         chooseCathegoryButton.setTitle("Выбрать категорию     >", for: UIControl.State.normal)
         chooseCathegoryButton.contentHorizontalAlignment = .center
         chooseCathegoryButton.setTitleColor(UIColor.blue, for: .normal)
-        
         clearAllStars()
-        
-        
     }
-    @IBAction func cancelBUttonPressed(_ sender: UIButton) {
-        
+    
+    func jumpToNewViewController(identifier: String) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let destinationVC = storyboard.instantiateViewController(withIdentifier: "FavoritesViewController")
+        let destinationVC = storyboard.instantiateViewController(withIdentifier: identifier)
         present(destinationVC, animated: true, completion: nil)
-        
+    }
+    
+    @IBAction func cancelBUttonPressed(_ sender: UIButton) {
+        jumpToNewViewController(identifier: "FavoritesViewController")
     }
     
     @IBAction func chooseCathegoryButtonPressed(_ sender: UIButton) {
-        
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let destinationVC = storyboard.instantiateViewController(withIdentifier: "CathegoriesViewController")
-        present(destinationVC, animated: true, completion: nil)
-        
-        
-        
+        jumpToNewViewController(identifier: "CathegoriesViewController")
     }
     
     @IBAction func unwindFromCathegoriesTableViewController(_ segue: UIStoryboardSegue) {
@@ -155,6 +142,8 @@ class AddAlcoViewController: UIViewController {
         chooseCathegoryButton.contentHorizontalAlignment = .left
         chooseCathegoryButton.setTitleColor(UIColor.black, for: .normal)
     }
+    
+    // MARK: Выбрать рейтинг - переделать
     
     private func clearAllStars() {
         star1.setTitleColor(.blue, for: .normal)
@@ -214,6 +203,13 @@ class AddAlcoViewController: UIViewController {
         let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)
         alert.addAction(alertAction)
         present(alert, animated: true, completion: nil)
+    }
+    
+    func setupView(view: UIView) {
+        view.layer.shadowColor = UIColor.black.cgColor
+        view.layer.shadowOffset = CGSize(width: 10, height: 10)
+        view.layer.shadowOpacity = 0.8
+        view.layer.shadowRadius = 20
     }
     
 }

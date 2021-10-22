@@ -20,11 +20,14 @@ class FavoritesViewController: UIViewController {
 
         tableView.dataSource = self
         tableView.delegate = self
+        tableView.register(UINib(nibName: "FavoriteDrinksTableViewCell", bundle: nil), forCellReuseIdentifier: "FavoriteDrinksTableViewCell")
         
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        // MARK: Вынимаем данные из CoreData и вставляю в таблицу
         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appDelegate.persistentContainer.viewContext
@@ -43,51 +46,41 @@ class FavoritesViewController: UIViewController {
         
     }
     
-    @IBAction func aboutButtonPressed(_ sender: UIButton) {
-        
+    func jumpToNewViewController(identifier: String) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let destinationVC = storyboard.instantiateViewController(withIdentifier: "AboutViewController")
+        let destinationVC = storyboard.instantiateViewController(withIdentifier: identifier)
         present(destinationVC, animated: true, completion: nil)
-        
+    }
+    
+    @IBAction func aboutButtonPressed(_ sender: UIButton) {
+        jumpToNewViewController(identifier: "AboutViewController")
     }
     
     @IBAction func addNewDrinkButtonPressed(_ sender: UIButton) {
-        
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let destinationVC = storyboard.instantiateViewController(withIdentifier: "AddAlcoViewController")
-        present(destinationVC, animated: true, completion: nil)
-        
+        jumpToNewViewController(identifier: "AddAlcoViewController")
     }
     
 }
 
 extension FavoritesViewController: UITableViewDelegate, UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return drinks.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as? FavoriteDrinksTableViewCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "FavoriteDrinksTableViewCell", for: indexPath) as? FavoriteDrinksTableViewCell {
             
             let drink = drinks[indexPath.row]
-            let name = drink.name ?? ""
-            let shop = drink.shop ?? ""
-            let rate = drink.rate ?? "-"
-            
-            cell.nameLabel?.text = name
-            cell.shopLabel?.text = shop
-            cell.rateLabel?.text = rate
-            
+            cell.setupCell(drink: drink)
             return cell
             
         }
-        
         return UITableViewCell()
-        
     }
     
-    
+    // MARK: Удаление строчки из таблицы и базы данных
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         
@@ -109,6 +102,8 @@ extension FavoritesViewController: UITableViewDelegate, UITableViewDataSource {
         
     }
     
+    // MARK: Выбрать ячейку и перейти на детальный просмотр
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toInfoVC" {
             if let destinationVC = segue.destination as? InfoViewController {
@@ -118,7 +113,6 @@ extension FavoritesViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
         
         guard let drinks = drinks?[indexPath.row] else { return }
         performSegue(withIdentifier: "toInfoVC", sender: drinks)

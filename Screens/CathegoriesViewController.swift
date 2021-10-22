@@ -36,19 +36,14 @@ class CathegoriesViewController: UIViewController {
         
     }
     
-    
-    
-
-    
     @IBAction func cancelButtonPressed(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
-    
 }
 
 extension CathegoriesViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as? CathegoriesTableViewCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "CathegoriesTableViewCell", for: indexPath) as? CathegoriesTableViewCell {
             
             cell.cathegoryNameLabel.text = cathegories[indexPath.row]
             return cell

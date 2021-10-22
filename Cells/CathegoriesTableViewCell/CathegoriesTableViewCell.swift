@@ -1,15 +1,17 @@
 //
-//  GenresTableViewCell.swift
+//  TableViewCell.swift
 //  AlcoApp
 //
-//  Created by Surgeont on 16.08.2021.
+//  Created by Surgeont on 22.10.2021.
 //
 
 import UIKit
 
 class CathegoriesTableViewCell: UITableViewCell {
-
+    
     
     @IBOutlet weak var cathegoryNameLabel: UILabel!
+    
+    
     
 }

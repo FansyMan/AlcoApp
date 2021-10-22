@@ -34,7 +34,7 @@ class InfoViewController: UIViewController, UICollectionViewDataSource, UICollec
     @IBOutlet weak var nameOfDrink: UILabel!
     @IBOutlet weak var shopLabel: UILabel!
     @IBOutlet weak var imageOfCathegory: UIImageView!
-    @IBOutlet weak var descriptionLabel: UITextField!
+    @IBOutlet weak var descriptionLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,7 +49,7 @@ class InfoViewController: UIViewController, UICollectionViewDataSource, UICollec
 
         nameOfDrink.text = drinks?.name
         shopLabel.text = "Где купить: \(drinks?.shop ?? "Нет данных")"
-        descriptionLabel.text = drinks?.descrip
+        descriptionLabel.text = "О напитке: \(drinks?.descrip ?? "No Info")"
         
         
         

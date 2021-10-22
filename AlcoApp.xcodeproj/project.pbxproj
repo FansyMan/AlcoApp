@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		501B061E2722E309007C5EA6 /* CathegoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501B061C2722E309007C5EA6 /* CathegoriesTableViewCell.swift */; };
 		5042353726CA6C60003DE626 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5042353626CA6C60003DE626 /* AppDelegate.swift */; };
 		5042353926CA6C60003DE626 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5042353826CA6C60003DE626 /* SceneDelegate.swift */; };
-		5042353B26CA6C60003DE626 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5042353A26CA6C60003DE626 /* ViewController.swift */; };
 		5042353E26CA6C60003DE626 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5042353C26CA6C60003DE626 /* Main.storyboard */; };
 		5042354126CA6C60003DE626 /* AlcoApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5042353F26CA6C60003DE626 /* AlcoApp.xcdatamodeld */; };
 		5042354326CA6C62003DE626 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5042354226CA6C62003DE626 /* Assets.xcassets */; };
@@ -19,19 +19,19 @@
 		5042355426CA717E003DE626 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5042355326CA717E003DE626 /* InfoViewController.swift */; };
 		506FD3FB26CE3C3B00526B1A /* Drink+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506FD3F926CE3C3B00526B1A /* Drink+CoreDataClass.swift */; };
 		506FD3FC26CE3C3B00526B1A /* Drink+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506FD3FA26CE3C3B00526B1A /* Drink+CoreDataProperties.swift */; };
-		50B0D75B26CAA34E009519C7 /* FavoriteDrinksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B0D75A26CAA34E009519C7 /* FavoriteDrinksTableViewCell.swift */; };
+		50A6C0B82722D683008ABA9E /* FavoriteDrinksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A6C0B62722D683008ABA9E /* FavoriteDrinksTableViewCell.swift */; };
+		50A6C0B92722D683008ABA9E /* FavoriteDrinksTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50A6C0B72722D683008ABA9E /* FavoriteDrinksTableViewCell.xib */; };
 		50B0D75D26CAB8E8009519C7 /* CathegoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B0D75C26CAB8E8009519C7 /* CathegoriesViewController.swift */; };
-		50B0D75F26CABA83009519C7 /* CathegoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B0D75E26CABA83009519C7 /* CathegoriesTableViewCell.swift */; };
 		50B0D76326CC36AC009519C7 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B0D76226CC36AC009519C7 /* AnimationViewController.swift */; };
 		50C4D1F026D7C1B300BE7F0D /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C4D1EF26D7C1B300BE7F0D /* AboutViewController.swift */; };
 		50E4484F26D6998000E14B81 /* StarsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E4484E26D6998000E14B81 /* StarsCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		501B061C2722E309007C5EA6 /* CathegoriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CathegoriesTableViewCell.swift; sourceTree = "<group>"; };
 		5042353326CA6C60003DE626 /* AlcoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlcoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5042353626CA6C60003DE626 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5042353826CA6C60003DE626 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5042353A26CA6C60003DE626 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5042353D26CA6C60003DE626 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5042354026CA6C60003DE626 /* AlcoApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AlcoApp.xcdatamodel; sourceTree = "<group>"; };
 		5042354226CA6C62003DE626 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -42,9 +42,9 @@
 		5042355326CA717E003DE626 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		506FD3F926CE3C3B00526B1A /* Drink+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Drink+CoreDataClass.swift"; sourceTree = "<group>"; };
 		506FD3FA26CE3C3B00526B1A /* Drink+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Drink+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		50B0D75A26CAA34E009519C7 /* FavoriteDrinksTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDrinksTableViewCell.swift; sourceTree = "<group>"; };
+		50A6C0B62722D683008ABA9E /* FavoriteDrinksTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDrinksTableViewCell.swift; sourceTree = "<group>"; };
+		50A6C0B72722D683008ABA9E /* FavoriteDrinksTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteDrinksTableViewCell.xib; sourceTree = "<group>"; };
 		50B0D75C26CAB8E8009519C7 /* CathegoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CathegoriesViewController.swift; sourceTree = "<group>"; };
-		50B0D75E26CABA83009519C7 /* CathegoriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CathegoriesTableViewCell.swift; sourceTree = "<group>"; };
 		50B0D76226CC36AC009519C7 /* AnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
 		50C4D1EF26D7C1B300BE7F0D /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		50E4484E26D6998000E14B81 /* StarsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarsCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -61,13 +61,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5042352A26CA6C60003DE626 = {
+		501B06172722DE42007C5EA6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				506FD3F926CE3C3B00526B1A /* Drink+CoreDataClass.swift */,
 				506FD3FA26CE3C3B00526B1A /* Drink+CoreDataProperties.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		501B061B2722E2E8007C5EA6 /* CathegoriesTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				501B061C2722E309007C5EA6 /* CathegoriesTableViewCell.swift */,
+			);
+			path = CathegoriesTableViewCell;
+			sourceTree = "<group>";
+		};
+		5042352A26CA6C60003DE626 = {
+			isa = PBXGroup;
+			children = (
+				501B06172722DE42007C5EA6 /* Models */,
 				50B0D75926CAA1F8009519C7 /* Cells */,
-				5042354E26CA6C8D003DE626 /* Models */,
 				5042354D26CA6C83003DE626 /* Screens */,
 				5042353526CA6C60003DE626 /* AlcoApp */,
 				5042353426CA6C60003DE626 /* Products */,
@@ -87,7 +102,6 @@
 			children = (
 				5042353626CA6C60003DE626 /* AppDelegate.swift */,
 				5042353826CA6C60003DE626 /* SceneDelegate.swift */,
-				5042353A26CA6C60003DE626 /* ViewController.swift */,
 				5042353C26CA6C60003DE626 /* Main.storyboard */,
 				5042354226CA6C62003DE626 /* Assets.xcassets */,
 				5042354426CA6C62003DE626 /* LaunchScreen.storyboard */,
@@ -110,18 +124,20 @@
 			path = Screens;
 			sourceTree = "<group>";
 		};
-		5042354E26CA6C8D003DE626 /* Models */ = {
+		50A6C0B52722D65F008ABA9E /* FavoriteDrinksTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				50A6C0B62722D683008ABA9E /* FavoriteDrinksTableViewCell.swift */,
+				50A6C0B72722D683008ABA9E /* FavoriteDrinksTableViewCell.xib */,
 			);
-			path = Models;
+			path = FavoriteDrinksTableViewCell;
 			sourceTree = "<group>";
 		};
 		50B0D75926CAA1F8009519C7 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				50B0D75A26CAA34E009519C7 /* FavoriteDrinksTableViewCell.swift */,
-				50B0D75E26CABA83009519C7 /* CathegoriesTableViewCell.swift */,
+				501B061B2722E2E8007C5EA6 /* CathegoriesTableViewCell */,
+				50A6C0B52722D65F008ABA9E /* FavoriteDrinksTableViewCell */,
 				50E4484E26D6998000E14B81 /* StarsCollectionViewCell.swift */,
 			);
 			path = Cells;
@@ -185,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5042354626CA6C62003DE626 /* LaunchScreen.storyboard in Resources */,
+				50A6C0B92722D683008ABA9E /* FavoriteDrinksTableViewCell.xib in Resources */,
 				5042354326CA6C62003DE626 /* Assets.xcassets in Resources */,
 				5042353E26CA6C60003DE626 /* Main.storyboard in Resources */,
 			);
@@ -197,12 +214,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				501B061E2722E309007C5EA6 /* CathegoriesTableViewCell.swift in Sources */,
+				50A6C0B82722D683008ABA9E /* FavoriteDrinksTableViewCell.swift in Sources */,
 				506FD3FC26CE3C3B00526B1A /* Drink+CoreDataProperties.swift in Sources */,
 				50B0D75D26CAB8E8009519C7 /* CathegoriesViewController.swift in Sources */,
 				5042354126CA6C60003DE626 /* AlcoApp.xcdatamodeld in Sources */,
 				50C4D1F026D7C1B300BE7F0D /* AboutViewController.swift in Sources */,
 				506FD3FB26CE3C3B00526B1A /* Drink+CoreDataClass.swift in Sources */,
-				5042353B26CA6C60003DE626 /* ViewController.swift in Sources */,
 				50B0D76326CC36AC009519C7 /* AnimationViewController.swift in Sources */,
 				5042353726CA6C60003DE626 /* AppDelegate.swift in Sources */,
 				5042355426CA717E003DE626 /* InfoViewController.swift in Sources */,
@@ -210,8 +228,6 @@
 				5042355026CA6DA8003DE626 /* FavoritesViewController.swift in Sources */,
 				50E4484F26D6998000E14B81 /* StarsCollectionViewCell.swift in Sources */,
 				5042353926CA6C60003DE626 /* SceneDelegate.swift in Sources */,
-				50B0D75F26CABA83009519C7 /* CathegoriesTableViewCell.swift in Sources */,
-				50B0D75B26CAA34E009519C7 /* FavoriteDrinksTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
